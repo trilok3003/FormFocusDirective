@@ -1,0 +1,19 @@
+<h1>Reactive Forms</h1>
+
+<nav>
+	<a (click)="toggleEditor('home')">Home</a>
+	<a (click)="toggleEditor('profile')">Profile Editor</a>
+</nav>
+
+<div *ngIf="showNameEditor">
+	Home page
+</div>
+
+<app-profile-editor *ngIf="showProfileEditor"></app-profile-editor>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
